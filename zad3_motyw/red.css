@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #2d3436;
+    line-height: 1.6;
+    background-color: #fff5f5; 
+}
+
+main {
+    background: white;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(214, 48, 49, 0.15);
+    border-radius: 0px; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #d63031; 
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #c0392b; 
+    border-bottom: 3px solid #d63031; 
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-transform: uppercase; 
+}
+
+h3 {
+    color: #e17055;
+}
+
+section {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: #d63031;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff7675;
+    text-decoration: underline;
+}
+
+.kontakt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.kontakt-wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px; 
+    border: 4px solid #d63031; 
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 50px;
+}
