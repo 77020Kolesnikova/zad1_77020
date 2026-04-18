@@ -1,0 +1,169 @@
+/* Numer indeksu: 77020 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #2d3436;
+    line-height: 1.6;
+    background-color: #f0f7f0; 
+}
+
+main {
+    background: white;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
+    border-radius: 30px; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #2e8b57; 
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #008000; 
+    border-bottom: 2px dashed #a2d2a2; 
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #2e8b57;
+}
+
+section {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2e8b57;
+    text-decoration: underline;
+}
+
+.kontakt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.kontakt-wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
+    border: 3px solid #008000; 
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2e8b57;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: red;
+    background-color: #ffeef0;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+.success-message {
+    color: #008000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e6f9e6;
+    border-radius: 8px;
+    border: 1px solid #a2d2a2;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.form-submit-btn:hover {
+    background-color: #008000;
+}
