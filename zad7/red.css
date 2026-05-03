@@ -1,0 +1,212 @@
+/* Numer indeksu: 77020 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #2d3436;
+    line-height: 1.6;
+    background-color: #fff5f5; 
+}
+
+main {
+    background: white;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(214, 48, 49, 0.15);
+    border-radius: 0px; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #d63031; 
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #c0392b; 
+    border-bottom: 3px solid #d63031; 
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-transform: uppercase; 
+}
+
+h3 {
+    color: #e17055;
+}
+
+section {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a {
+    color: #d63031;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff7675;
+    text-decoration: underline;
+}
+
+.kontakt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.kontakt-wrapper img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px; 
+    border: 4px solid #d63031; 
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+#contactForm fieldset {
+    border: 2px solid #d63031 !important;
+    background-color: #fff5f5 !important;
+    border-radius: 0px !important; 
+}
+
+#contactForm legend {
+    color: #c0392b !important;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d63031;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: red;
+    background-color: #ffeef0;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+.success-message {
+    color: #27ae60; 
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #eafaf1;
+    border-radius: 4px;
+    border: 1px solid #27ae60;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.form-submit-btn:hover {
+    background-color: #c0392b;
+}
+
+.notes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
