@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kolesnikova Polina</title>
+    <link rel="stylesheet" href="red.css">
+</head>
+
+<body>
+<div style="text-align: center; margin-top: 20px;">
+    <button id="theme-btn" style="padding: 10px; cursor: pointer;">Zmień motyw (Czerwony/Zielony)</button>
+    <button id="toggle-section-btn" style="padding: 10px; cursor: pointer;">Pokaż/Ukryj Doświadczenie</button>
+</div>
+<header>
+    <h1 id="typing-title">Kolesnikova Polina</h1>
+    <p>Warszawa • +48 576 431 280 • pkolesn1@stu.vistula.edu.pl</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Kontakt</h2>
+        <div class="kontakt-wrapper">
+            <div class="kontakt-text">
+                <p>Email: <a href="mailto:pkolesn1@stu.vistula.edu.pl">pkolesn1@stu.vistula.edu.pl</a></p>
+                <p>Telefon: <a href="tel:+48576431280">+48 576 431 280</a></p>
+                <p>Miasto: Warszawa</p>
+
+                <p>
+                    <a href="https://github.com/77020Kolesnikova" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/polina-kolesnikova-8280a83b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </p>
+            </div>
+
+            <img src="zdjecie.jpg" alt="Zdjęcie profilowe">
+        </div>
+    </section>
+
+    <section>
+        <h2>O mnie</h2>
+        <p>
+        Jestem początkującym programistą z solidnymi podstawami w językach JavaScript, Java, Kotlin, Python oraz C#. 
+        Posiadam praktyczne umiejętności w tworzeniu stron internetowych (HTML/CSS) oraz pracy z relacyjnymi bazami danych, takimi jak SQL Server i Microsoft Access. 
+        Moje wykształcenie techniczne uzupełniam biegłą znajomością systemów operacyjnych Windows oraz zaawansowaną obsługą narzędzi pakietu Microsoft Office.
+    </p>
+    <p>
+        Wyróżnia mnie wysoki poziom kompetencji językowych (polski C1, angielski B2), co pozwala mi na swobodną pracę w środowisku międzynarodowym oraz korzystanie z dokumentacji technicznej.
+        Jestem osobą odpowiedzialną, dobrze zorganizowana i stale rozwijam swoje umiejętności poprzez samodzielną realizację projektów programistycznych. Moim celem jest dalszy rozwój zawodowy w branży IT oraz wnoszenie wkładu w pracę zespołową.
+    </p>
+    </section>
+
+    <section>
+        <h2>Edukacja</h2>
+        <h3>Akademia Finansów i Biznesu Vistula (Warszawa)</h3>
+        <p>Kierunek: Inżynieria sztucznej inteligencji (od 2025)</p>
+       
+      <h3>STEP IT Academy</h3>
+        <p>Kierunek: Junior Computer Academy</p>
+    </section>
+
+    <section id="experience-section">
+        <h2>Doświadczenie</h2>
+        <article>
+            <h3>Projekt: Baza danych dla księgarni</h3>
+            <p>Projektowanie oraz obsługa baz danych przy użyciu SQL Server Management Studio</p>
+        </article>
+
+        <article>
+            <h3>Projekt: Aplikacja dla księgarni</h3>
+            <p>Projektowanie oraz obsługa aplikacji dla księgarni</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Umiejętności</h2>
+        <ul id="skills-list">
+            </ul>
+    </section>
+
+    <section>
+        <h2>Projekty</h2>
+        <ul id="projects-list">
+            </ul>
+    </section>
+
+    <section id="local-storage-section">
+        <h2>Notatki</h2>
+        <div class="form-group" style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <input type="text" id="noteInput" placeholder="Wpisz nową notatkę..." style="flex: 1;">
+            <button id="addNoteBtn" class="form-submit-btn" style="margin-top: 0; width: auto;">Dodaj</button>
+        </div>
+        <ul id="notesList" class="notes-list">
+            </ul>
+    </section>
+
+    <section id="contact-form-section">
+        <h2>Napisz do mnie</h2>
+        <form id="contactForm" novalidate>
+            <fieldset style="border: 2px dashed #a2d2a2; border-radius: 10px; padding: 20px; background-color: #f9fdf9;">
+                <legend style="font-weight: bold; color: #008000; padding: 0 10px;">Formularz kontaktowy</legend>
+
+                <div class="form-group">
+                    <label for="firstName">Imię:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Wpisz swoje imię">
+                    <span class="error-message" id="firstNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Nazwisko:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Wpisz swoje nazwisko">
+                    <span class="error-message" id="lastNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="np. test@domena.pl">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Wpisz swoją wiadomość..."></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+            </fieldset>
+
+            <button type="submit" id="submitBtn" class="form-submit-btn">Wyślij wiadomość</button>
+            <p id="successMessage" class="success-message" style="display: none;">Wiadomość została pomyślnie wysłana!</p>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Kolesnikova Polina, numer albomu: 77020</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
